@@ -1,4 +1,4 @@
-# SpringBoot2 升級 3
+# Spring Boot 2 升級 3
 
 - 這是簡易 Spring Boot 2 升級 Spring boot 3 的範例  
 - 可以參考 Spring Boot 官方的[升級文件](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.0-Migration-Guide)
