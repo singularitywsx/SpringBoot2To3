@@ -15,3 +15,6 @@
 |---|---|---|
 |  17 |  3.0.13  | feature/SpringBoot2To3 |
 
+- 使用 OpenRewrite 套件[Migrate to Spring Boot 3.0](https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_0)
+- 執行 mvn rewrite:run
+
