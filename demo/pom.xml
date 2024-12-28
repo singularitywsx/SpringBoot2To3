@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.12</version>
+		<version>3.0.13</version>
 		<relativePath/>
 	</parent>
 	<groupId>com.example</groupId>
@@ -14,7 +14,7 @@
 	<name>demo</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>17</java.version>
 	</properties>
 
 	<dependencyManagement>
@@ -22,7 +22,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>2021.0.6</version>
+				<version>2022.0.5</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -54,26 +54,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 		<!-- JUnit 4 -->
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.12</version>
-			<scope>test</scope>
-		</dependency>
 		<!-- Mockito -->
 		<dependency>
 			<groupId>org.mockito</groupId>
 			<artifactId>mockito-core</artifactId>
-			<version>4.5.1</version>
+			<version>4.11.0</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -95,25 +83,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-
-			<!-- OpenRewrite Plugin -->
-			<plugin>
-				<groupId>org.openrewrite.maven</groupId>
-				<artifactId>rewrite-maven-plugin</artifactId>
-				<version>5.25.0</version>
-				<configuration>
-					<activeRecipes>
-						<recipe>org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_0</recipe>
-					</activeRecipes>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.openrewrite.recipe</groupId>
-						<artifactId>rewrite-spring</artifactId>
-						<version>5.5.0</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 		</plugins>
 	</build>

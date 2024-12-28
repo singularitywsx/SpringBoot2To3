@@ -2,7 +2,7 @@ package com.example.demo.entity;
 
 import com.example.demo.common.Sex;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "EMPLOYEE")

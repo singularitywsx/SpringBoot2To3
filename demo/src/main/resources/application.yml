@@ -14,11 +14,6 @@ spring:
         format_sql: true
         hbm2ddl:
           auto: none
-  redis:
-    host: localhost
-    port: 6379
-    password: yourpassword # 如果有密碼的話
-    database: 0
 
   datasource:
     url: jdbc:h2:mem:testdb
@@ -37,6 +32,10 @@ spring:
   h2:
     console:
       path: /h2
+  data.redis.database: 0
+  data.redis.host: localhost
+  data.redis.password: yourpassword
+  data.redis.port: 6379
 
 feign:
   client:
