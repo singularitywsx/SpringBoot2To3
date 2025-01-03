@@ -61,6 +61,34 @@
 
 ## 執行後效果舉例
 
+### pom.xml 變化
+```diff
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+-       <version>2.7.12</version>
++       <version>3.0.13</version>
+        <relativePath/>
+    </parent>
+```
+
+```diff
+    <properties>
+-       <java.version>11</java.version>
++       <java.version>17</java.version>
+    <properties>
+```
+```diff
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-dependencies</artifactId>
+-   <version>2021.0.6</version>
++   <version>2022.0.5</version>
+    <type>pom</type>
+    <scope>import</scope>
+</dependency>
+```
+
 ### FeignClient 變化
 ```diff
 // 定義 Feign 客戶端，baseUrl
